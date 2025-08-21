@@ -28,6 +28,7 @@ Este projeto foi desenvolvido como parte de um desafio prático de HTML e CSS, c
 ---
 
 ## 📂 Estrutura do Repositório
+```
 ├── index.html # Página principal
 ├── assets/
 │ ├── css/
@@ -36,6 +37,7 @@ Este projeto foi desenvolvido como parte de um desafio prático de HTML e CSS, c
 │ ├── logo.png # Logotipo do site
 │ └── game-of-thrones.png # Imagem de exemplo usada no conteúdo
 └── README.md # Documentação do projeto
+```
 
 ## 💡 Aprendizado
 Durante o desenvolvimento, foram reforçados conceitos como:

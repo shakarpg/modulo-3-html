@@ -1,31 +1,19 @@
-# 🌐 Desafio - Recriando Wikipedia com Layout Moderno
+# 🌐 Desafio — Página Estilo Wikipedia (Layout Moderno)
 
-Este projeto foi desenvolvido como parte de um desafio prático de HTML e CSS, com o objetivo de recriar uma página inspirada no estilo da **Wikipedia**, mas com um **layout mais moderno e responsivo**.
+Este projeto recria uma página inspirada no layout da **Wikipedia**, com foco em **HTML semântico**, **acessibilidade básica** e **CSS Grid** para um visual moderno e responsivo. Ideal para demonstrar domínio de fundamentos da web em um código simples e bem organizado.
 
----
+## 🔎 Por que este projeto é relevante para recrutadores
+- Estrutura semântica clara (header/nav/main/aside/footer) que favorece **SEO e acessibilidade**.
+- **Layout em 3 colunas** com CSS Grid, facilmente adaptável a telas menores.
+- Código **enxuto e legível**, pensado para ser expandido (mais seções, páginas e conteúdos).
+- Organização de **assets** em pastas, pronta para escalar.
 
-## 🎯 Objetivo do Projeto
-- Praticar **HTML semântico** e **boas práticas de acessibilidade**.  
-- Estruturar um site em **layout de 3 colunas** (menu lateral, conteúdo principal e âncoras de navegação).  
-- Trabalhar com **CSS Grid** para organizar a página de forma responsiva.  
-- Aplicar conceitos de **design minimalista**, inspirado em sites de referência.  
+## 🛠️ Tecnologias
+- **HTML5**
+- **CSS3 (Grid/Flex)**
 
----
-
-## 🚀 Funcionalidades
-- **Layout moderno:** limpo e inspirado na Wikipedia.  
-- **Barra lateral de navegação:** para facilitar a organização dos links.  
-- **Área de conteúdo principal:** para textos, imagens e tabelas.  
-- **Seção de âncoras:** permitindo navegar entre partes do artigo.  
-- **Design responsivo:** adaptável a diferentes tamanhos de tela.  
-
----
-
-## 🛠️ Tecnologias Utilizadas
-- **HTML5** – Estrutura semântica da página  
-- **CSS3** – Estilização com foco em responsividade e grid layout  
-
----
+## ▶️ Como executar
+Basta abrir `index.html` no navegador. (Opcional: use a extensão **Live Server** do VS Code para recarregar automaticamente.)
 
 ## 📂 Estrutura do Repositório
 ```
@@ -39,14 +27,10 @@ Este projeto foi desenvolvido como parte de um desafio prático de HTML e CSS, c
 └── README.md # Documentação do projeto
 ```
 
-## 💡 Aprendizado
-Durante o desenvolvimento, foram reforçados conceitos como:
-- Uso correto de **tags semânticas** para acessibilidade.  
-- Organização do conteúdo em **grid layout**.  
-- Melhoria no design de interfaces simples, com base em boas referências visuais.  
+## 🖼️ Prévia
+![Logo](./assets/images/logo.png)
 
----
-
-## 🔗 Referências
-- [Wikipedia](https://pt.wikipedia.org/) – Inspiração para o layout  
-- [MDN Web Docs](https://developer.mozilla.org/pt-BR/) – Documentação sobre HTML e CSS 
+## 📌 Próximos passos (roadmap curto)
+- Refinar estados de foco e contraste para **acessibilidade**.
+- Adicionar **navegação por âncoras** real no conteúdo.
+- Criar **variações de tema** (claro/escuro) só com CSS.

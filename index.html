@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Python (linguagem de programação) — Enciclopédia</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="Artigo estilo Wikipedia sobre a linguagem de programação Python." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="./" aria-label="Página inicial">
+        <img src="assets/images/logo.png" alt="Logo do site" height="36" />
+        <span class="brand__name">Enciclopédia</span>
+      </a>
+      <form class="search" role="search" aria-label="Pesquisar">
+        <input type="search" placeholder="Pesquisar na enciclopédia" aria-label="Pesquisar" />
+      </form>
+    </div>
+  </header>
+
+  <div class="bar"></div>
+
+  <div class="content">
+    <aside class="sidebar">
+      <nav aria-label="Seções">
+        <h2>Portal</h2>
+        <ul>
+          <li><a href="#">Página principal</a></li>
+          <li><a href="#">Tecnologia</a></li>
+          <li><a href="#">Ciência</a></li>
+          <li><a href="#">História</a></li>
+          <li><a href="#">Artes</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <article>
+        <h1>Python (linguagem de programação)</h1>
+        <p class="lead">
+          <strong>Python</strong> é uma linguagem de programação de alto nível,
+          multiparadigma e de código aberto, conhecida por sua
+          <em>legibilidade</em> e vasta biblioteca padrão. É amplamente usada
+          em ciência de dados, desenvolvimento web, automação, computação
+          científica, aprendizado de máquina e muito mais.
+        </p>
+
+        <figure class="infobox" role="complementary" aria-label="Ficha técnica de Python">
+          <figcaption>Python</figcaption>
+          <div class="infobox__row"><span>Desenvolvedor:</span> Python Software Foundation</div>
+          <div class="infobox__row"><span>Criador:</span> Guido van Rossum</div>
+          <div class="infobox__row"><span>Primeiro lançamento:</span> 1991</div>
+          <div class="infobox__row"><span>Paradigmas:</span> Imperativo, Orientado a Objetos, Funcional</div>
+          <div class="infobox__row"><span>Extensões:</span> <code>.py</code>, <code>.pyc</code>, <code>.pyo</code></div>
+          <div class="infobox__row"><span>Gerenciador de pacotes:</span> <code>pip</code></div>
+          <div class="infobox__row"><span>Licença:</span> Python Software Foundation License</div>
+          <div class="infobox__row"><span>Site oficial:</span> <a href="https://www.python.org" target="_blank" rel="noopener">python.org</a></div>
+        </figure>
+
+        <nav class="toc" aria-label="Neste artigo">
+          <strong>Conteúdo</strong>
+          <ol>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#caracteristicas">Características</a></li>
+            <li><a href="#sintaxe">Sintaxe básica</a></li>
+            <li><a href="#ecossistema">Ecossistema</a></li>
+            <li><a href="#exemplos">Exemplos</a></li>
+            <li><a href="#ver-tambem">Ver também</a></li>
+            <li><a href="#referencias">Referências</a></li>
+          </ol>
+        </nav>
+
+        <h2 id="historia">História</h2>
+        <p>
+          Python foi concebida por Guido van Rossum no final da década de 1980
+          e lançada publicamente em 1991. Desde então, passou por diversas
+          versões, com a série <strong>3.x</strong> introduzindo melhorias de
+          consistência e Unicode. A linguagem é mantida pela Python Software
+          Foundation, com um processo colaborativo de evolução por PEPs
+          (<em>Python Enhancement Proposals</em>).
+        </p>
+
+        <h2 id="caracteristicas">Características</h2>
+        <ul>
+          <li><strong>Sintaxe clara</strong> e legível, com blocos definidos por indentação.</li>
+          <li><strong>Tipagem dinâmica</strong> e forte, com inferência em tempo de execução.</li>
+          <li><strong>Biblioteca padrão</strong> abrangente (&ldquo;batteries included&rdquo;).</li>
+          <li>Suporte a múltiplos <em>paradigmas</em> (OO, funcional, imperativo).</li>
+          <li>Gestão de pacotes via <code>pip</code> e reposição no <code>PyPI</code>.</li>
+          <li>Portável entre sistemas operacionais (Windows, macOS, Linux).</li>
+        </ul>
+
+        <h2 id="sintaxe">Sintaxe básica</h2>
+        <p>Abaixo, um exemplo simples que demonstra funções, listas e <em>list comprehension</em>:</p>
+<pre class="codeblock"><code># hello.py
+def saudacao(nome: str) -> str:
+    return f"Olá, {nome}!"
+
+nomes = ["Ana", "Bruno", "Carla"]
+mensagens = [saudacao(n) for n in nomes]
+
+for m in mensagens:
+    print(m)
+</code></pre>
+
+        <p>Exemplo usando bibliotecas populares para dados:</p>
+<pre class="codeblock"><code># dados.py
+import pandas as pd
+
+df = pd.DataFrame({"produto": ["A", "B"], "vendas": [10, 23]})
+print(df.describe())
+</code></pre>
+
+        <h2 id="ecossistema">Ecossistema</h2>
+        <p>
+          A comunidade Python oferece um ecossistema maduro de bibliotecas e
+          frameworks, como <strong>Django</strong> e <strong>Flask</strong> (web),
+          <strong>NumPy</strong>, <strong>Pandas</strong> e <strong>Matplotlib</strong> (ciência de dados),
+          além de <strong>FastAPI</strong>, <strong>Typer</strong> e <strong>Poetry</strong> para
+          produtividade e empacotamento.
+        </p>
+
+        <h2 id="exemplos">Exemplos</h2>
+        <p>Exemplo de API mínima com FastAPI:</p>
+<pre class="codeblock"><code># api.py
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def raiz():
+    return {"status": "ok"}
+</code></pre>
+
+        <h2 id="ver-tambem">Ver também</h2>
+        <ul>
+          <li><a href="#">Guido van Rossum</a></li>
+          <li><a href="#">PEP 8</a> (estilo de código)</li>
+          <li><a href="#">PyPI</a></li>
+        </ul>
+
+        <h2 id="referencias">Referências</h2>
+        <ol class="refs">
+          <li>Documentação oficial do Python: <a href="https://docs.python.org/pt-br/3/" target="_blank" rel="noopener">docs.python.org</a></li>
+          <li>Guia de Estilo PEP 8: <a href="https://peps.python.org/pep-0008/" target="_blank" rel="noopener">peps.python.org</a></li>
+        </ol>
+      </article>
+    </main>
+
+    <aside class="anchors">
+      <h2>Neste artigo</h2>
+      <ul>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#sintaxe">Sintaxe</a></li>
+        <li><a href="#ecossistema">Ecossistema</a></li>
+        <li><a href="#exemplos">Exemplos</a></li>
+        <li><a href="#ver-tambem">Ver também</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <small>Conteúdo disponível sob licença livre para fins educacionais.</small>
+    </div>
+  </footer>
+</body>
+</html>

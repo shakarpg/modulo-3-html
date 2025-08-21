@@ -28,6 +28,7 @@ Este projeto foi desenvolvido como parte de um desafio prático de HTML e CSS, c
 ---
 
 ## 📂 Estrutura do Repositório
+.
 ├── index.html # Página principal
 ├── assets/
 │ ├── css/

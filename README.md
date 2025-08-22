@@ -30,7 +30,3 @@ Basta abrir `index.html` no navegador. (Opcional: use a extensão **Live Server*
 ## 🖼️ Prévia
 ![Logo](./assets/images/logo.png)
 
-## 📌 Próximos passos (roadmap curto)
-- Refinar estados de foco e contraste para **acessibilidade**.
-- Adicionar **navegação por âncoras** real no conteúdo.
-- Criar **variações de tema** (claro/escuro) só com CSS.
